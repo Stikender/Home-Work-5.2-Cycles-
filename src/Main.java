@@ -66,5 +66,20 @@ public class Main {
         for (firstFriday = 4; firstFriday <= 31; firstFriday += 7) {
             System.out.println("Сегодня пятница, " + firstFriday + " число. Необходиом подготовить отчет.");
         }
+
+        System.out.println("Exercise 3.1");
+
+        for (int j = 0; j <= 2100; j+=79) {
+            if (j >= 1820 && j <=2100)  {
+                System.out.println(j);
+            }
+        }
+
+        System.out.println("Exercise 3.2");
+
+        for (int j = 1; j <=10 ; j++) {
+            System.out.println("2 * " + j + " = " + 2 * j);
+            
+        }
     }
 }
