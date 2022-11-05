@@ -34,7 +34,18 @@ public class Main {
         }
         System.out.println("Exercise 2.1");
 
+        int deposit2 = 15000;
+        double sumWhithPercent = 0;
+        int percent = 7;
+        int month2 = 0;
+        while (sumWhithPercent <= 12_000_000) {
+            double sumMonthPercent = 1 + percent * 0.01;
+            sumWhithPercent = sumMonthPercent * (sumWhithPercent + deposit2);
+            month2++;
+            System.out.println("Месяц, " + month2 + " сумма накоплений равна " + sumWhithPercent + " рублей.");
+         }
 
+        System.out.println("Exercise 2.2");
 
 
     }
