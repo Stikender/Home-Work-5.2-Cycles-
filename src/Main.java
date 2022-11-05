@@ -42,11 +42,29 @@ public class Main {
             double sumMonthPercent = 1 + percent * 0.01;
             sumWhithPercent = sumMonthPercent * (sumWhithPercent + deposit2);
             month2++;
-            System.out.println("Месяц, " + month2 + " сумма накоплений равна " + sumWhithPercent + " рублей.");
-         }
+            if (month2 % 6 == 0) {
+                System.out.println("Месяц, " + month2 + " сумма накоплений равна " + sumWhithPercent + " рублей.");
+            }
+        }
 
-        System.out.println("Exercise 2.2");
+        System.out.println("Exercise 2.3");
 
+        sumWhithPercent = 0;
+        deposit2 = 15_000;
+        month2 = 0;
+        while (month2 <=108) {
+            double sumMonthPersentVasya = 1 + percent * 0.01;
+            sumWhithPercent = sumMonthPersentVasya * (sumWhithPercent + deposit2);
+            month2++;
+             if (month2 % 6 ==0) {
+                 System.out.println("Месяц, " + month2 + " сумма накоплений равна " + sumWhithPercent + " рублей.");
+             }
+        }
 
+        System.out.println("Exercise 2.4");
+        int firstFriday = 4;
+        for (firstFriday = 4; firstFriday <= 31; firstFriday += 7) {
+            System.out.println("Сегодня пятница, " + firstFriday + " число. Необходиом подготовить отчет.");
+        }
     }
 }
