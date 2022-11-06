@@ -69,11 +69,13 @@ public class Main {
 
         System.out.println("Exercise 3.1");
 
-        for (int j = 0; j <= 2100; j+=79) {
-            if (j >= 1820 && j <=2100)  {
-                System.out.println(j);
-            }
-        }
+        int nowYear = 2022;
+        int startYearComet = nowYear - 200;
+        int finishYearComet = nowYear + 100;
+        for (int yearComet = 0; yearComet <= finishYearComet; yearComet+=79) {
+            if (yearComet >= startYearComet && yearComet <= finishYearComet)
+                System.out.println(yearComet);
+                }
 
         System.out.println("Exercise 3.2");
 
